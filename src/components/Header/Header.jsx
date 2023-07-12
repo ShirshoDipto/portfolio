@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="navLogo">
-          Shirsho Dipto
+          Shirsho
         </a>
 
         <div className={showMenu ? "navMenu showMenu" : "navMenu"}>
