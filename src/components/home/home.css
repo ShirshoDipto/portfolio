@@ -3,7 +3,6 @@
 }
 
 .homeContent {
-    /* display: flex; */
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
@@ -32,16 +31,8 @@
 .homeTitle {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
-    /* display: flex;
-    border: thin solid red;
-    align-items: center; */
 
 }
-
-/* .homeName {
-    flex: 1;
-    border: thin solid red;
-} */
 
 .homeHand {
     width: 38px;
