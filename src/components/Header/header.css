@@ -21,6 +21,10 @@
     font-weight: var(--font-medium);
 }
 
+.navLogo {
+    font-size: var(--h3-font-size);
+}
+
 .navList {
     display: flex;
     column-gap: 2rem;

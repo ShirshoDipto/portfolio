@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className={isScrollHeader ? "header scrollHeader" : "header"}>
       <nav className="nav container">
-        <a href="index.html" className="navLogo">
+        <a href="#home" className="navLogo">
           Shirsho
         </a>
 
@@ -68,7 +68,7 @@ const Header = () => {
               </a>
             </li>
 
-            <li className="navItem">
+            {/* <li className="navItem">
               <a
                 href="#services"
                 className={
@@ -78,7 +78,7 @@ const Header = () => {
               >
                 <i className="uil uil-briefcase-alt navIcon"></i>Services
               </a>
-            </li>
+            </li> */}
 
             <li className="navItem">
               <a
