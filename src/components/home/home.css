@@ -24,10 +24,6 @@
     color: var(--title-color-dark);
 }
 
-/* .homeData {
-    flex: 1;
-} */
-
 .homeTitle {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
@@ -64,7 +60,7 @@
 }
 
 .homeImg {
-    background: url(../../assets/profile.jpg);
+    background: url(../../assets/profilePic.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

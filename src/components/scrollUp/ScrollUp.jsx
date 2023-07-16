@@ -8,7 +8,7 @@ const ScrollUp = () => {
     function onScroll() {
       const scrollTop = document.documentElement.scrollTop;
 
-      if (scrollTop > 560) {
+      if (scrollTop > 300) {
         setIsScrollTop(true);
       } else {
         setIsScrollTop(false);
