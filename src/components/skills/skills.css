@@ -1,5 +1,7 @@
 .skillsContainer {
-    grid-template-columns: repeat(2, 350px);
+    /* grid-template-columns: repeat(2, 350px); */
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 3rem;
     justify-content: center;
 }
@@ -7,8 +9,9 @@
 .skillsContent {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem;
     border-radius: 1.25rem;
+    min-width: 350px;
 }
 
 .skillsTitle {
@@ -48,6 +51,16 @@
 
 .skillsLevel {
     font-size: var(--tiny-font-size);
+}
+
+.expressIcon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.expressIcon img {
+    width: 20px;
 }
 
 /*=============== BREAKPOINTS ===============*/
