@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="sectionTitle">About Me</h2>
-      <span className="sectionSubtitle">My Introduction</span>
+      <span className="sectionSubtitle"></span>
 
       <div className="aboutContainer container grid">
         <img src={aboutImg} alt="" className="aboutImg" />
@@ -15,9 +15,14 @@ const About = () => {
         <div className="aboutData">
           <Info />
           <p className="aboutDescription">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            I'm Shirsho, a passionate and self-motivated web developer with a
+            knack for problem-solving and exploring new technologies. I am
+            proficient in JavaScript, Node.js, React, Express, MongoDB, and
+            various other technologies. Whether working independently or as part
+            of a team, I strive to contribute effectively and collaborate
+            towards achieving common objectives. I have a strong commitment to
+            continuous learning, and I channel that enthusiasm into creating
+            impactful web applications and delivering meaningful results.
           </p>
 
           {/* A download attribute with the a tag make sure that the file is getting downloaded.  */}
