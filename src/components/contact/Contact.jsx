@@ -16,6 +16,7 @@ const Contact = () => {
       (result) => {
         console.log(result);
         e.target.reset();
+        alert("Message Sent Successfully. ");
       },
       (error) => {
         console.log(error.text);
@@ -25,54 +26,62 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="sectionTitle">Get in touch</h2>
-      <span className="sectionSubtitle">Contact me</span>
+      <h2 className="sectionTitle">Contact Me</h2>
+      <span className="sectionSubtitle"></span>
 
       <div className="contactContainer container grid">
         <div className="contactContent">
-          <h3 className="contactTitle">Talk to me</h3>
+          <h3 className="contactTitle">Social Links</h3>
 
           <div className="contactInfo">
             <div className="contactCard">
-              <i className="bx bx-mail-send contactCardIcon"></i>
+              <i className="bx bxs-envelope contactCardIcon"></i>
 
               <h3 className="contactCardTitle">Email</h3>
               <span className="contactCardData">shirshodipto@gmail.com</span>
 
-              <a href="shirshodipto@gmail.com" className="contactButton">
-                Write me{" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
+              <a href="mailto:shirshodipto@gmail.com" className="contactButton">
+                Open{" "}
+                <i className="bx bxs-right-arrow-alt contactButtonIcon"></i>
               </a>
             </div>
 
             <div className="contactCard">
-              <i className="bx bxl-whatsapp contactCardIcon"></i>
+              <i class="bx bxl-linkedin-square contactCardIcon"></i>
 
-              <h3 className="contatcCardTitle">Whatsapp</h3>
-              <span className="contactCardData">+881704418483</span>
+              <h3 className="contactCardTitle">LinkedIn</h3>
+              {/* <span className="contactCardData">
+                linkedin.com/in/shirsho-dipto-092a53222
+              </span> */}
 
-              <a href="www.whatsapp.com" className="contactButton">
-                Write me{" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
+              <a
+                href="https://www.linkedin.com/in/shirsho-dipto-092a53222"
+                target="_blank"
+                className="contactButton"
+              >
+                Open <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
               </a>
             </div>
 
             <div className="contactCard">
-              <i className="bx bxl-messenger contactCardIcon"></i>
+              <i className="bx bxl-facebook-square contactCardIcon"></i>
 
-              <h3 className="contatcCardTitle">Messenger</h3>
-              <span className="contactCardData">user.fb123</span>
+              <h3 className="contactCardTitle">Facebook</h3>
+              {/* <span className="contactCardData">user.fb123</span> */}
 
-              <a href="" className="contactButton">
-                Write me{" "}
-                <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
+              <a
+                href="https://www.facebook.com/mohammad.roger.77"
+                target="_blank"
+                className="contactButton"
+              >
+                Open <i className="bx bx-right-arrow-alt contactButtonIcon"></i>
               </a>
             </div>
           </div>
         </div>
 
         <div className="contactContent">
-          <h3 className="contactTitle">Write me your project</h3>
+          <h3 className="contactTitle">Or write your inquiry</h3>
 
           <form ref={form} className="contactForm" onSubmit={sendEmail}>
             <div className="contactFormDiv">
@@ -96,11 +105,11 @@ const Contact = () => {
               />
             </div>
             <div className="contactFormDiv contactFormArea">
-              <label className="contactFormTag">Project</label>
+              <label className="contactFormTag">Message</label>
               <textarea
                 name="project"
                 className="contactFormInput"
-                placeholder="Write your project"
+                placeholder="Enter your message"
                 cols="30"
                 rows="10"
                 required
