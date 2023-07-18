@@ -4,16 +4,16 @@ import ProjectItems from "./ProjectItems";
 import { useEffect } from "react";
 
 const Projects = () => {
-  const [item, setItem] = useState({ name: "all" });
+  const [item, setItem] = useState({ name: "All" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (item.name === "all") {
+    if (item.name === "All") {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {
-        return project.category === item.name;
+        return project.category.includes(item.name);
       });
 
       setProjects(newProjects);

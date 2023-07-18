@@ -1,53 +1,110 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import mapImg from "../../assets/map.png";
+import nosebookImg from "../../assets/nosebook.png";
+import blogImg from "../../assets/blog.png";
+import portfolioImg from "../../assets/portfolio.png";
+import cvImg from "../../assets/cvBuilder.png";
+import weatherImg from "../../assets/weatherApp.png";
+import memoryCardImg from "../../assets/memoryCard.png";
+import todoImg from "../../assets/todo.png";
+import restaurantImg from "../../assets/restaurant.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: Work1,
-    title: "Web design",
-    category: "web",
+    image: mapImg,
+    title: "Interactive Map",
+    description:
+      "An interactive data visualization map built with Mapbox that unveils significant insights about geopolitical affairs.",
+    category: ["JavaScript"],
+    viewLink: "https://shirshodipto.github.io/ustadh-project",
+    codeLink: "https://github.com/ShirshoDipto/ustadh-project",
   },
   {
     id: 2,
-    image: Work2,
-    title: "App movil",
-    category: "app",
+    image: nosebookImg,
+    title: "NoseBook",
+    description:
+      "A comprehensive Facebook clone incorporating essential features of Facebook such as posts, comments, likes, friend requests, real-time notifications and messaging, and various other features.",
+    category: ["React", "Express", "MongoDB", "NodeJS"],
+    viewLink: "https://nosebook-social.netlify.app",
+    codeLink: "https://github.com/ShirshoDipto/social-media-client",
   },
   {
     id: 3,
-    image: Work3,
-    title: "Brand design",
-    category: "design",
+    image: blogImg,
+    description: "A personal blog website. ",
+    title: "Personal Blog",
+    category: ["React", "Express", "NodeJS", "MongoDB"],
+    viewLink: "https://shirsho-blog.netlify.app",
+    codeLink: "https://github.com/ShirshoDipto/blog-client",
   },
   {
     id: 4,
-    image: Work4,
-    title: "App movil",
-    category: "app",
+    image: portfolioImg,
+    title: "Portfolio",
+    category: ["React"],
+    description:
+      "A fully responnsive portfolio website for myself. This one right here. ",
+    viewLink: "https://shirsho-blog.netlify.app",
+    codeLink: "https://github.com/ShirshoDipto/portfolio",
   },
   {
     id: 5,
-    image: Work5,
-    title: "Web design",
-    category: "web",
+    image: weatherImg,
+    title: "Weather App",
+    category: ["JavaScript"],
+    description:
+      "A simple weather app where one can view the key weather informations of a city by entering the city name correctly.",
+    viewLink: "https://shirshodipto.github.io/weather-app",
+    codeLink: "https://github.com/ShirshoDipto/weather-app",
+  },
+  {
+    id: 6,
+    image: todoImg,
+    title: "To-Do App",
+    category: ["JavaScript"],
+    description:
+      "A fully responsive task manager app built with vanilla JavaScript.",
+    viewLink: "https://shirshodipto.github.io/todo",
+    codeLink: "https://github.com/ShirshoDipto/todo",
+  },
+  {
+    id: 7,
+    image: cvImg,
+    title: "CV Builder",
+    category: ["React"],
+    description: "A CV/Resume builder app built with React.",
+    viewLink: "inventory-app-production-809e.up.railway.app",
+    codeLink: "https://github.com/ShirshoDipto/cv-app",
+  },
+  {
+    id: 8,
+    image: memoryCardImg,
+    title: "Memory Card",
+    category: ["React"],
+    description: "A game testing the players' memory. Built with React.",
+    viewLink: "inventory-app-production-809e.up.railway.app",
+    codeLink: "https://github.com/ShirshoDipto/memory-vard",
+  },
+  {
+    id: 9,
+    image: restaurantImg,
+    title: "Restaurant Page",
+    category: ["React"],
   },
 ];
 
 export const projectsNav = [
   {
-    name: "all",
+    name: "All",
   },
   {
-    name: "web",
+    name: "JavaScript",
   },
   {
-    name: "app",
+    name: "React",
   },
   {
-    name: "design",
+    name: "NodeJS",
   },
 ];

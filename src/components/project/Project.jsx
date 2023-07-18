@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <section className="project section" id="project">
       <h2 className="sectionTitle">Projects</h2>
-      <span className="sectionSubtitle"></span>
+      <span className="sectionSubtitle">Most Notable</span>
 
       <Projects />
     </section>
