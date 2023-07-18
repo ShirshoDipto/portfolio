@@ -57,7 +57,7 @@ const Miscellaneous = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skillsName">Google Cloud</h3>
+              <h3 className="skillsName">Mapbox</h3>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Miscellaneous = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skillsName">Mongoose</h3>
+              <h3 className="skillsName">Google Cloud</h3>
             </div>
           </div>
 
