@@ -1,8 +1,9 @@
 import React from "react";
 
-const Social = () => {
+const Social = ({ inView }) => {
+  console.log(inView);
   return (
-    <div className="homeSocial">
+    <div className={inView ? "homeSocial homeShift" : "homeSocial"}>
       <a
         href="https://www.linkedin.com/in/shirsho-dipto-092a53222/"
         className="homeSocialIcon"

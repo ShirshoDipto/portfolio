@@ -1,8 +1,8 @@
 import React from "react";
 
-const Data = () => {
+const Data = ({ inView }) => {
   return (
-    <div className="homeData">
+    <div className={inView ? "homeData homeShift" : "homeData"}>
       <h1 className="homeTitle">
         <p className="homeName"></p>
         Shirsho Dipto

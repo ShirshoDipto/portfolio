@@ -1,5 +1,12 @@
 .homeContainer {
     row-gap: 7rem;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.homeData {
+    transform: translateX(-150%);
+    transition: 0.7s;
 }
 
 .homeContent {
@@ -13,6 +20,8 @@
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    transform: translateX(-150%);
+    transition: 0.7s;
 }
 
 .homeSocialIcon {
@@ -69,7 +78,9 @@
     justify-self: center;
     width: 300px;
     height: 300px;
-    animation: profileAnimation 8s ease-in-out infinite 1s;
+    animation: profileAnimation 8s ease-in-out infinite;
+    transform: translateX(150%);
+    transition: 0.7s;
 }
 
 @keyframes profileAnimation {
@@ -112,6 +123,14 @@
 .homeScrollArrow {
     font-size: 1.25rem;
     color: var(--title-color);
+}
+
+.homeVisible {
+    opacity: 1;
+}
+
+.homeShift {
+    transform: translateX(0%);
 }
 
 @media screen and (max-width: 992px) {
