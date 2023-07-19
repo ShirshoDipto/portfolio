@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     column-gap: 3rem;
     justify-content: center;
+    opacity: 0;
+    transition: 0.7s;
 }
 
 .skillsContent {
@@ -11,6 +13,10 @@
     padding: 2rem;
     border-radius: 1.25rem;
     min-width: 350px;
+}
+
+.skillsVisible {
+    opacity: 1;
 }
 
 .skillsTitle {

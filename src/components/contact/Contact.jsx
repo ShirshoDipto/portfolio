@@ -1,8 +1,9 @@
 import "./contact.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useInView } from "react-intersection-observer";
 
-const Contact = () => {
+const Contact = ({ setActiveNav }) => {
   const form = useRef();
 
   const serviceId = process.env.REACT_APP_SERVICE_ID;
@@ -24,13 +25,31 @@ const Contact = () => {
     );
   };
 
+  const { ref: mainRef, inView } = useInView({
+    threshold: 0,
+  });
+  const { ref: contentRef, inView: inView2 } = useInView({
+    rootMargin: "-300px",
+  });
+
+  useEffect(() => {
+    if (inView2) {
+      setActiveNav("#contact");
+    }
+  }, [inView2, setActiveNav]);
+
   return (
     <section className="contact section" id="contact">
       <h2 className="sectionTitle">Contact Me</h2>
       <span className="sectionSubtitle"></span>
 
-      <div className="contactContainer container grid">
-        <div className="contactContent">
+      <div
+        ref={mainRef}
+        className={`contactContainer container grid ${
+          inView ? "contactVisible" : ""
+        }`}
+      >
+        <div ref={contentRef} className="contactContent">
           <h3 className="contactTitle">Social Links</h3>
 
           <div className="contactInfo">

@@ -1,6 +1,6 @@
-const Frontend = () => {
+const Frontend = ({ contentRef }) => {
   return (
-    <div className="skillsContent">
+    <div ref={contentRef} className="skillsContent">
       <h3 className="skillsTitle">Frontend</h3>
 
       <div className="skillsBox">

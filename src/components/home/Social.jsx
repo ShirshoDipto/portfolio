@@ -1,7 +1,6 @@
 import React from "react";
 
 const Social = ({ inView }) => {
-  console.log(inView);
   return (
     <div className={inView ? "homeSocial homeShift" : "homeSocial"}>
       <a

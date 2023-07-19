@@ -3,7 +3,7 @@ import { projectsData, projectsNav } from "./Data";
 import ProjectItems from "./ProjectItems";
 import { useEffect } from "react";
 
-const Projects = () => {
+const Projects = ({ contentRef }) => {
   const [item, setItem] = useState({ name: "All" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
@@ -41,7 +41,7 @@ const Projects = () => {
         })}
       </div>
 
-      <div className="projectContainer container grid">
+      <div ref={contentRef} className="projectContainer container grid">
         {projects.map((item) => {
           return <ProjectItems key={item.id} item={item} />;
         })}

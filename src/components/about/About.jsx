@@ -2,17 +2,37 @@ import "./about.css";
 import aboutImg from "../../assets/profilePic.jpeg";
 import resume from "../../assets/my-resume.pdf";
 import Info from "./Info";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-const About = () => {
+const About = ({ setActiveNav }) => {
+  const { ref: mainRef, inView } = useInView({
+    threshold: 0,
+  });
+  const { ref: contentRef, inView: inView2 } = useInView({
+    threshold: 0.6,
+  });
+
+  useEffect(() => {
+    if (inView2) {
+      setActiveNav("#about");
+    }
+  }, [inView2, setActiveNav]);
+
   return (
     <section className="about section" id="about">
       <h2 className="sectionTitle">About Me</h2>
       <span className="sectionSubtitle"></span>
 
-      <div className="aboutContainer container grid">
+      <div
+        ref={mainRef}
+        className={`aboutContainer container grid ${
+          inView ? "aboutVisible" : ""
+        }`}
+      >
         <img src={aboutImg} alt="" className="aboutImg" />
 
-        <div className="aboutData">
+        <div ref={contentRef} className="aboutData">
           <Info />
           <p className="aboutDescription">
             I'm Shirsho, a passionate and self-motivated web developer with a

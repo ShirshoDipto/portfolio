@@ -8,19 +8,22 @@ import Contact from "./components/contact/Contact";
 import Project from "./components/project/Project";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollUp/ScrollUp";
+import { useState } from "react";
 
 function App() {
+  const [activeNav, setActiveNav] = useState("#home");
+
   return (
     <>
-      <Header />
+      <Header activeNav={activeNav} setActiveNav={setActiveNav} />
       <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        {/* <Services /> */}
-        <Project />
-        <Contact />
-        {/* <Qualification /> */}
+        <Home setActiveNav={setActiveNav} />
+        <About setActiveNav={setActiveNav} />
+        <Skills setActiveNav={setActiveNav} />
+        {/* <Services setActiveNav={setActiveNav} /> */}
+        <Project setActiveNav={setActiveNav} />
+        <Contact setActiveNav={setActiveNav} />
+        {/* <Qualification setActiveNav={setActiveNav} /> */}
       </main>
       <Footer />
       <ScrollUp />

@@ -1,11 +1,20 @@
 import "./header.css";
 import { useEffect, useState } from "react";
 
-const Header = () => {
+const Header = ({ activeNav, setActiveNav }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
-
   const [isScrollHeader, setIsScrollHeader] = useState(false);
+  const [isFirstTime, setIsFirst] = useState(true);
+
+  function bringMaginLine() {
+    const magicLine = document.querySelector(".magicLine");
+    const active = document.querySelector(".activeLink");
+    const width = active.offsetWidth;
+    const left = active.offsetLeft;
+
+    magicLine.style.width = width + "px";
+    magicLine.style.left = left + "px";
+  }
 
   useEffect(() => {
     function onScroll() {
@@ -23,6 +32,33 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const navMenus = document.querySelectorAll(".navItem");
+    let timeoutId;
+
+    timeoutId = setTimeout(() => {
+      bringMaginLine();
+      setIsFirst(false);
+    }, 800);
+
+    navMenus.forEach((menu) => {
+      menu.addEventListener("mouseleave", bringMaginLine);
+    });
+
+    return () => {
+      clearTimeout(timeoutId);
+      navMenus.forEach((menu) => {
+        menu.removeEventListener("mouseleave", bringMaginLine);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isFirstTime) return;
+
+    bringMaginLine();
+  }, [activeNav, isFirstTime]);
+
   return (
     <header className={isScrollHeader ? "header scrollHeader" : "header"}>
       <nav className="nav container">
@@ -38,7 +74,7 @@ const Header = () => {
                 className={
                   activeNav === "#home" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#home")}
+                // onClick={() => setActiveNav("#home")}
               >
                 <i className="uil uil-estate navIcon"></i>Home
               </a>
@@ -50,7 +86,7 @@ const Header = () => {
                 className={
                   activeNav === "#about" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#about")}
+                // onClick={() => setActiveNav("#about")}
               >
                 <i className="uil uil-user navIcon"></i>About
               </a>
@@ -62,7 +98,7 @@ const Header = () => {
                 className={
                   activeNav === "#skills" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#skills")}
+                // onClick={() => setActiveNav("#skills")}
               >
                 <i className="uil uil-file-alt navIcon"></i>Skills
               </a>
@@ -74,7 +110,7 @@ const Header = () => {
                 className={
                   activeNav === "#services" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#services")}
+                // onClick={() => setActiveNav("#services")}
               >
                 <i className="uil uil-briefcase-alt navIcon"></i>Services
               </a>
@@ -86,7 +122,7 @@ const Header = () => {
                 className={
                   activeNav === "#project" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#project")}
+                // onClick={() => setActiveNav("#project")}
               >
                 <i className="uil uil-scenery navIcon"></i>Projects
               </a>
@@ -98,12 +134,13 @@ const Header = () => {
                 className={
                   activeNav === "#contact" ? "navLink activeLink" : "navLink"
                 }
-                onClick={() => setActiveNav("#contact")}
+                // onClick={() => setActiveNav("#contact")}
               >
                 <i className="uil uil-message navIcon"></i>Contact
               </a>
             </li>
           </ul>
+          <div className="magicLine"></div>
 
           <i
             class="uil uil-times navClose"

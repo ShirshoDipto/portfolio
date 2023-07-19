@@ -1,7 +1,12 @@
 .aboutContainer {
     grid-template-columns: repeat(2, 1fr);
-    /* align-items: center; */
+    opacity: 0;
+    transition: 0.7s;
     column-gap: 4rem;
+}
+
+.aboutVisible {
+    opacity: 1;
 }
 
 .aboutImg {
