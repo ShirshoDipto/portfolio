@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import "./project.css";
 import Projects from "./Projects";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Project = ({ setActiveNav }) => {
   const { ref: contentRef, inView: inView2 } = useInView({
