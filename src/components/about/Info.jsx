@@ -10,7 +10,7 @@ const Info = () => {
       <div className="aboutBox">
         <i class="bx bx-badge-check"></i>
         <h3 className="aboutTitle">Completed</h3>
-        <span className="aboutSubtitle">20+ Projects</span>
+        <span className="aboutSubtitle">30+ Projects</span>
       </div>
 
       <div className="aboutBox">

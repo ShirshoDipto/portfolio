@@ -1,5 +1,5 @@
 import "./about.css";
-import aboutImg from "../../assets/profilePic.jpeg";
+import aboutImg from "../../assets/profilePic2gray.jpeg";
 import resume from "../../assets/my-resume.pdf";
 import Info from "./Info";
 import { useInView } from "react-intersection-observer";
