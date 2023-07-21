@@ -86,16 +86,6 @@ export const projectsData = [
     viewLink: "inventory-app-production-809e.up.railway.app",
     codeLink: "https://github.com/ShirshoDipto/memory-vard",
   },
-  {
-    id: 9,
-    image: restaurantImg,
-    title: "Restaurant Page",
-    category: ["React"],
-    description:
-      "A single page restaurant website built as a practice to building single page website using vanilla JS.",
-    viewLink: "https://shirshodipto.github.io/restaurant-page",
-    codeLink: "https://github.com/ShirshoDipto/restaurant-page",
-  },
 ];
 
 export const projectsNav = [
