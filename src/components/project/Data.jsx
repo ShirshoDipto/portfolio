@@ -6,7 +6,6 @@ import cvImg from "../../assets/cvBuilder.png";
 import weatherImg from "../../assets/weatherApp.png";
 import memoryCardImg from "../../assets/memoryCard.png";
 import todoImg from "../../assets/todo.png";
-import restaurantImg from "../../assets/restaurant.png";
 
 export const projectsData = [
   {
