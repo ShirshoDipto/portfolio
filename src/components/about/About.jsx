@@ -1,6 +1,6 @@
 import "./about.css";
 import aboutImg from "../../assets/profilePic2gray.jpeg";
-import resume from "../../assets/my-resume.pdf";
+import resume from "../../assets/resume-google-doc.pdf";
 import Info from "./Info";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
