@@ -16,7 +16,7 @@ const Info = () => {
       <div className="aboutBox">
         <i class="bx bx-badge-check"></i>
         <h3 className="aboutTitle">Preference</h3>
-        <span className="aboutSubtitle">Backend</span>
+        <span className="aboutSubtitle">Full-Stack</span>
       </div>
     </div>
   );
