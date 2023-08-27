@@ -1,28 +1,26 @@
-import { useState } from "react";
-import { projectsData, projectsNav } from "./Data";
+import { projectsData } from "./Data";
 import ProjectItems from "./ProjectItems";
-import { useEffect } from "react";
 
 const Projects = ({ contentRef }) => {
-  const [item, setItem] = useState({ name: "All" });
-  const [projects, setProjects] = useState([]);
-  const [active, setActive] = useState(0);
+  // const [projects, setProjects] = useState([]);
+  // const [item, setItem] = useState({ name: "All" });
+  // const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    if (item.name === "All") {
-      setProjects(projectsData);
-    } else {
-      const newProjects = projectsData.filter((project) => {
-        return project.category.includes(item.name);
-      });
+  // useEffect(() => {
+  //   if (item.name === "All") {
+  //     setProjects(projectsData);
+  //   } else {
+  //     const newProjects = projectsData.filter((project) => {
+  //       return project.category.includes(item.name);
+  //     });
 
-      setProjects(newProjects);
-    }
-  }, [item]);
+  //     setProjects(newProjects);
+  //   }
+  // }, [item]);
 
   return (
     <div>
-      <div className="projectFilters">
+      {/* <div className="projectFilters">
         {projectsNav.map((item, index) => {
           return (
             <span
@@ -39,10 +37,10 @@ const Projects = ({ contentRef }) => {
             </span>
           );
         })}
-      </div>
+      </div> */}
 
       <div ref={contentRef} className="projectContainer container grid">
-        {projects.map((item) => {
+        {projectsData.map((item) => {
           return <ProjectItems key={item.id} item={item} />;
         })}
       </div>

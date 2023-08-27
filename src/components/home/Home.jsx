@@ -31,7 +31,7 @@ const Home = ({ setActiveNav }) => {
       >
         <div ref={contentRef} className="homeContent grid">
           <Social inView={inView} />
-          <div className={inView ? "homeImg homeShift" : "homeImg"}> </div>
+          {/* <div className={inView ? "homeImg homeShift" : "homeImg"}> </div> */}
           <Data inView={inView} />
         </div>
         <ScrollDown />

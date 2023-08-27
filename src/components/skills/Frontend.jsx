@@ -10,7 +10,7 @@ const Frontend = ({ contentRef }) => {
 
             <div>
               <h3 className="skillsName">HTML</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
 
@@ -19,7 +19,7 @@ const Frontend = ({ contentRef }) => {
 
             <div>
               <h3 className="skillsName">CSS</h3>
-              <span className="skillsLevel">Basic</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Frontend = ({ contentRef }) => {
 
             <div>
               <h3 className="skillsName">JavaScript</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const Frontend = ({ contentRef }) => {
 
             <div>
               <h3 className="skillsName">ReactJS</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
         </div>

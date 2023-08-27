@@ -70,7 +70,15 @@
 
 .homeDescription {
     max-width: 400px;
+    /* margin-bottom: calc(var(--mb-3) + 100px); */
     margin-bottom: var(--mb-3);
+}
+
+.homeButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .homeImg {

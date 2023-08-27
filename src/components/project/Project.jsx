@@ -17,7 +17,7 @@ const Project = ({ setActiveNav }) => {
   return (
     <section className="project section" id="project">
       <h2 className="sectionTitle">Projects</h2>
-      <span className="sectionSubtitle">Most Notable</span>
+      <span className="sectionSubtitle"></span>
 
       <Projects contentRef={contentRef} />
     </section>

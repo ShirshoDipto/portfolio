@@ -80,7 +80,7 @@ const Header = ({ activeNav, setActiveNav }) => {
               </a>
             </li>
 
-            <li className="navItem">
+            {/* <li className="navItem">
               <a
                 href="#about"
                 className={
@@ -90,7 +90,7 @@ const Header = ({ activeNav, setActiveNav }) => {
               >
                 <i className="uil uil-user navIcon"></i>About
               </a>
-            </li>
+            </li> */}
 
             <li className="navItem">
               <a

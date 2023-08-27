@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/home/Home";
-import About from "./components/about/About";
+// import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 // import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
@@ -18,7 +18,7 @@ function App() {
       <Header activeNav={activeNav} setActiveNav={setActiveNav} />
       <main className="main">
         <Home setActiveNav={setActiveNav} />
-        <About setActiveNav={setActiveNav} />
+        {/* <About setActiveNav={setActiveNav} /> */}
         <Skills setActiveNav={setActiveNav} />
         {/* <Services setActiveNav={setActiveNav} /> */}
         <Project setActiveNav={setActiveNav} />

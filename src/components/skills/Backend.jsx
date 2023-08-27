@@ -12,7 +12,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skillsName">NodeJS</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skillsName">ExpressJS</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skillsName">MongoDB</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skillsName">REST API</h3>
-              <span className="skillsLevel">Intermediate</span>
+              <span className="skillsLevel">Proficient</span>
             </div>
           </div>
 

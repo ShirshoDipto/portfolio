@@ -41,8 +41,8 @@
 }
 
 .projectImg {
-    width: 350px;
-    border-radius: 1rem;
+    width: 400px;
+    height: auto;
     margin-bottom: var(--mb-1);
 }
 
