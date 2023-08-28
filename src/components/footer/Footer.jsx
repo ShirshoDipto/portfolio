@@ -7,11 +7,11 @@ const Footer = () => {
         <h1 className="footerTitle">Shirsho</h1>
 
         <ul className="footerList">
-          <li>
+          {/* <li>
             <a href="#about" className="footerLink">
               About
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#project" className="footerLink">
               Projects
