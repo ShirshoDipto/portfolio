@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/Resume_Md Shirsho Dipto Haque.pdf";
+import resume from "../../assets/Resume_Shirsho Dipto.pdf";
 
 const Data = ({ inView }) => {
   return (
@@ -57,9 +57,9 @@ const Data = ({ inView }) => {
           ></path>
         </svg> */}
       </h1>
-      <h3 className="homeSubtitle">Full-Stack Developer</h3>
+      <h3 className="homeSubtitle">Full Stack Developer</h3>
       <p className="homeDescription">
-        I am a self-taught web developer proficient in developing full-stack web
+        I am a self-taught web developer proficient in developing full stack web
         applications using the MERN stack and various other technologies.
       </p>
 
