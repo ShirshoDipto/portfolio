@@ -74,7 +74,7 @@ const Contact = ({ setActiveNav }) => {
               </span> */}
 
               <a
-                href="https://www.linkedin.com/in/shirsho-dipto-092a53222"
+                href="https://www.linkedin.com/in/shirsho-dipto/"
                 target="_blank"
                 className="contactButton"
               >

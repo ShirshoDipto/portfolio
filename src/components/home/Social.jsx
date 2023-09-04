@@ -4,7 +4,7 @@ const Social = ({ inView }) => {
   return (
     <div className={inView ? "homeSocial homeShift" : "homeSocial"}>
       <a
-        href="https://www.linkedin.com/in/shirsho-dipto-092a53222/"
+        href="https://www.linkedin.com/in/shirsho-dipto/"
         className="homeSocialIcon"
         target="_blank"
       >
