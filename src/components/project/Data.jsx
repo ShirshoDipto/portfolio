@@ -11,13 +11,13 @@ import blogImg from "../../assets/blog.png";
 export const projectsData = [
   {
     id: 1,
-    image: battleshipImg,
-    title: "Battleship",
+    image: mapImg,
+    title: "Geopolicy Insight",
     description:
-      "A Battleship game built using Test-Driven Development (TDD) and Object-Oriented Programming (OOP) principles. Features multiplayer, offering real-time competition, and an intuitive ship placement mechanism using HTML drag and drop.",
-    category: ["JavaScript", "NodeJS", "ExpressJS"],
-    viewLink: "https://shirshodipto.github.io/battleship",
-    codeLink: "https://github.com/ShirshoDipto/battleship",
+      "An interactive data visualization map built with Mapbox that unveils significant insights about geopolitical affairs. Built for an online institution that teaches international affairs to its students. ",
+    category: ["JavaScript"],
+    viewLink: "https://shirshodipto.github.io/ustadh-project",
+    codeLink: "https://github.com/ShirshoDipto/ustadh-project",
   },
   {
     id: 2,
@@ -31,13 +31,13 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: mapImg,
-    title: "Geopolicy Insight",
+    image: battleshipImg,
+    title: "Battleship",
     description:
-      "An interactive data visualization map built with Mapbox that unveils significant insights about geopolitical affairs. Built for an online institution that teaches international affairs to its students. ",
-    category: ["JavaScript"],
-    viewLink: "https://shirshodipto.github.io/ustadh-project",
-    codeLink: "https://github.com/ShirshoDipto/ustadh-project",
+      "A Battleship game built using Test-Driven Development (TDD) and Object-Oriented Programming (OOP) principles. Features multiplayer, offering real-time competition, and an intuitive ship placement mechanism using HTML drag and drop.",
+    category: ["JavaScript", "NodeJS", "ExpressJS"],
+    viewLink: "https://shirshodipto.github.io/battleship",
+    codeLink: "https://github.com/ShirshoDipto/battleship",
   },
   {
     id: 4,
