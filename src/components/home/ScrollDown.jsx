@@ -1,7 +1,7 @@
 const ScrollDown = () => {
   return (
     <div className="homeScroll">
-      <a href="#about" className="homeScrollButton buttonFlex">
+      <a href="#skills" className="homeScrollButton buttonFlex">
         <svg
           width="32px"
           height="32px"

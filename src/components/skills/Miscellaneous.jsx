@@ -25,14 +25,6 @@ const Miscellaneous = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skillsName">Redux</h3>
-            </div>
-          </div>
-
-          <div className="skillsData">
-            <i class="bx bx-badge-check"></i>
-
-            <div>
               <h3 className="skillsName">Socket.io</h3>
             </div>
           </div>
