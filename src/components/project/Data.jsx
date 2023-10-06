@@ -24,7 +24,7 @@ export const projectsData = [
     image: nosebookImg,
     title: "NoseBook",
     description:
-      "A comprehensive full-stack Facebook clone incorporating essential features of Facebook such as posts, comments, likes, friend requests, real-time notifications and messaging, and more.",
+      "A comprehensive full stack Facebook clone incorporating essential features of Facebook such as posts, comments, likes, friend requests, real-time notifications and messaging, and more.",
     category: ["React", "Express", "MongoDB", "NodeJS"],
     viewLink: "https://nosebook-social.netlify.app",
     codeLink: "https://github.com/ShirshoDipto/social-media-client",
@@ -43,7 +43,7 @@ export const projectsData = [
     id: 4,
     image: blogImg,
     description:
-      "A full-stack personal blog app for posting my thoughts stories, and ideas.",
+      "A full stack personal blog app for posting my thoughts stories, and ideas.",
     title: "Personal Blog",
     category: ["React", "Express", "NodeJS", "MongoDB"],
     viewLink: "https://shirsho-blog.netlify.app",
