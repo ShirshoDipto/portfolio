@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/Resume_Shirsho Dipto_Stanford.pdf";
+import resume from "../../assets/Resume_Shirsho Dipto 3.pdf";
 
 const Data = ({ inView }) => {
   return (
